@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartamento</title>
+    <link rel="stylesheet" href="1apartmentdetials.css">
+</head>
+<body>
+    <div class="gallery">
+        <img src="PHOTO-edificio.jpg" alt="Photo de edificio Atlas">
+        <img src="PHOTO-livingroom.jpg" alt="Photo de la sala">
+        <img src="PHOTO-Lobbyarea.jpg" alt="Photo de la area social">
+
+        <div class="video-cell">
+        <img src="PHOTO-896.jpg" alt="Photo de la area social external">
+        <a href="VIDEO-034.mp4" class="video-link" target="_blank">
+            mira un recorrido
+        </a>
+        </div>
+
+        <div class="last-cell">
+        <img src="PHOTO-theater.jpg" alt="photo de la area de cine">
+        <buttom class="expand-btn" onclick="openLightbox()">
+            mira toda las 11 photos
+        </buttom>
+        </div>
+    </div>
+    <div class="titles">
+    <h1>Edificio Atlas</h1>
+    <p>Apartamento 3713</p>
+    </div>
+
+    <div class="detials">
+    <h2>Datos, Características y Politicas</h2>
+
+    <h3>Apartamento</h3>
+    <div class="details-row">
+    <div class="apartment-details"> 
+    <h4>Contenido</h4>
+    <ul>
+        <li>1 cuarto</li>
+        <li>1 baño</li>
+        <li>1 cocina</li>
+        <li>1 area de lavanderia</li>
+        <li>1 balcon</li>
+    </div>
+
+    <div class="apartment-equipment">
+    <h5>Equipamiento</h5>
+    <ul>
+        <li>refrigerador</li>
+        <li>estufa</li>
+        <li>microonda</li>
+        <li>lavadora</li>
+        <li>secadora</li>
+        <li>aire acondicionado</li>
+    </ul>
+    </div>
+    </div>
+
+
+    <h6 class="h6-1">Servicios de Edificio</h6>
+
+    <div class="building-areas">
+    <h6 class="h6-2">Areas Comunes</h6>
+     <ul>
+        <li>area de espera</li>
+        <li>area de cine</li>
+        <li>area de juego</li>
+        <li>gimnasio</li>
+        <li>areas de trabajo</li>
+        <li>areas sociales</li>
+        <li>area comercial</li>
+    </ul>
+    </div>
+
+    <div class="building-services">
+    <h6 class="h6-3">Servicios</h6>
+    <ul>
+        <li>cochera 7 pisos</li>
+        <li>guardias de seguridad y porteros</li>
+        <li>Cine privado bajo peticion</li>
+    </ul>
+    </div>
+
+    
+    <h6 class="h6-4">Politicas</h6>
+
+    <div class="Conditions">
+    <h6 class="h6-5">Condiciones</h6>
+     <ul>
+        <li>No animales permitidos</li>
+        <li>Renta es $600 minima con mantenimiento</li>
+        <li>Renta es $700 con linia blanca tambien</li>
+    </ul>
+    </div>
+
+    <div class="Cont">
+        <img src="PHOTO-111.png">
+    </div>
+
+    
+
+    <div class="lightbox" id="lightbox">
+    <button class="close-btn" onclick="closeLightbox()">x</button> 
+    <div class="lightbox-content">
+        <img src="PHOTO-livingroom.jpg" alt="photo de la sala">
+        <img src="PHOTO-kitchen.jpg" alt="photo de la cocina">
+        <img src="PHOTO-53.jpg" alt="photo del baño">
+        <img src="PHOTO-theater.jpg" alt="photo del cine">
+        <img src="PHOTO-2gym.jpg" alt="photo del gynasio">
+        <img src="PHOTO-896.jpg" alt="photo de la area external de espera">
+        <img src="PHOTO-playarea .jpg" alt="photo de la area de juego">
+        <img src="PHOTO-gamechill.jpg" alt="photo de la segunda area de juego">
+        <img src="PHOTO-lobbyarea (4).jpg" alt=" otra area de espera">
+        <img src="PHOTO-Lobbyarea2.jpg" alt="area de espera tambien">
+        <img src="PHOTO-partybarbecue2.jpg" alt="area de fiesta">
+    </div>
+
+    <script>
+        function openLightbox() {
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
